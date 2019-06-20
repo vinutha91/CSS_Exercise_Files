@@ -1,0 +1,73 @@
+.myButton {
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    background-color: burlywood;
+    border-radius: 5px;
+}
+
+.myButton:disabled {
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.myButton:hover {
+    cursor: pointer;
+}
+
+.myButton:disabled:disabled {
+    cursor: not-allowed;
+}
+
+.myButton:focus {
+    outline: 5px solid red;
+    outline-offset: 5px;
+}
+
+.myButton:active {
+    outline: 5px solid red;
+    outline-offset: 5px;
+}
+
+input[type="checkbox"]:checked + label {
+    color: red;
+}
+
+input[type="radio"]:indeterminate {
+    box-shadow: 0 0 1px 1px red;
+}
+
+input:required {
+    border: 1px solid red;
+}
+
+input:optional {
+    border: 1px solid green;
+}
+
+input:in-range {
+    border: 2px solid aqua;
+}
+
+input:out-of-range {
+    border: 2px solid red;
+}
+
+input:read-only { 
+    background-color: yellow;
+}
+
+input:read-write {
+    /*background-color: salmon;*/
+  }
+
+  input:valid {
+    border: 2px solid greenyellow;
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }

@@ -1,0 +1,32 @@
+/* SPECIFICITY */
+/* 001 */
+li {
+    color: blue;
+}
+
+/* 010 */
+.myClass {
+    color: green;
+}
+/* 100 */
+#myId {
+    color: red;
+}
+
+ul {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+li {
+    color: blue;
+}
+
+.myClass {
+    color: green;
+}
+
+#myId {
+    color: red;
+    font-size: 4em;
+}

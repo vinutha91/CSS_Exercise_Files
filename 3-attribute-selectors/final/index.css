@@ -1,0 +1,61 @@
+[target] {
+    color: blue;
+}
+
+a[target] {
+    color: green;
+}
+
+a[target="_blank"] {
+    color: greenyellow;
+}
+
+* {
+    color: gold
+}
+
+div[title="HeaderContainer"] {
+    color: orange;
+}
+
+div[title^="Header"] {
+    color: red;
+}
+
+div[title$="ner"] {
+    color: blue;
+}
+
+/* Contains */
+div[title*="ader"] {
+    color: aqua;
+}
+
+/* Match exact word */
+div[title|="HeaderContainer"] {
+    color: yellowgreen;
+}
+
+div[title~="HeaderContainer"] {
+    color: purple;
+}
+
+div[title="HeaderContainer" i] {
+    color: blue;
+}
+
+input[type="text" i] {
+    border: 3px solid red;
+}
+
+a[href^="mailto"]::before {
+    content: '\2709';
+    color: black;
+    font-size: 4em;
+}
+
+a[href$="pdf"]::before {
+    content: '\2709';
+    color: black;
+    font-size: 4em;
+}

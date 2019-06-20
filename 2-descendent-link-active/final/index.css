@@ -1,0 +1,23 @@
+div p {
+    color: red;
+}
+
+div + p {
+    color: green;
+}
+
+div > label {
+    color: blueviolet;
+}
+
+p ~ ul {
+    color: brown;
+}
+
+:link {
+    color: brown;
+}
+
+:active {
+    color: blueviolet;
+}

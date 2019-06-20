@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+
+<body>
+    <button class="myButton">Click Me</button>
+    <button class="myButton" disabled>Click Me</button>
+
+    <input type="checkbox" name="favFood">
+    <label>Pizza</label>
+    <input type="checkbox" name="favFood">
+    <label>Pasta</label>
+
+
+    <input id="myCheckbox" type="checkbox" name="Intermediate">
+    <label>Checkbox</label><br/>
+
+    <input type="text">
+    <input type="text" required><br/>
+
+    <input type="number" name="points" step="1" min="10" max="20" value="5">
+
+    <input type="text" value="Some read only text" readonly>
+    <br/>
+    <input type="email">
+
+    <script>
+        var checkbox = document.getElementById('myCheckbox');
+        checkbox.indeterminate = true;
+    </script>
+</body>
+
+</html>
