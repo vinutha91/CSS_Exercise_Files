@@ -1,0 +1,27 @@
+/* Has to be a simple selector */
+div p:not(.excludeMe) {
+    color: red;
+}
+
+/* Supported only in safari */
+div p:not(.excludeMe, .excludeMe) {
+    color: red;
+}
+
+/* Not supported yet */
+li:matches([title], [role]) {
+    color: blue;
+}
+
+:matches(#home, #contact) aside :matches(a) {
+    color: gold;
+}
+
+/* not supported */
+header:has(h1, h1, h3, h4, h5, h6) {
+    color: green;
+}
+
+header > h1 {
+    color: green;
+}

@@ -1,0 +1,33 @@
+li:first-of-type,
+li:last-of-type {
+    text-decoration: line-through;
+}
+
+li:nth-child(even) {
+    color: green;
+}
+
+li:nth-child(odd) {
+    color: gold;
+}
+
+li:first-child,
+li:last-child {
+    color: red;
+}
+
+li:nth-child(3) {
+    color: blue;
+}
+
+li:nth-child(3n+1) {
+    color: blue;
+}
+
+.example1 label:nth-of-type(2n+1) {
+    color: gold;
+}
+
+.example1 p:nth-last-of-type(2) {
+    color: red;
+}

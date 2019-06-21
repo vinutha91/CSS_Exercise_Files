@@ -18,7 +18,7 @@
     cursor: pointer;
 }
 
-.myButton:disabled:disabled {
+.myButton:disabled:hover {
     cursor: not-allowed;
 }
 
@@ -70,4 +70,19 @@ input:read-write {
 
   input:invalid {
     border: 2px solid red;
+  }
+
+  .cssCounter {
+      counter-reset: invalidCount;
+  }
+
+  :invalid {
+      background: pink;
+      border: 2px solid red;
+      counter-increment: invalidCount;
+  }
+
+  /* li:nth-of-type(2):before */
+  .myInvalidCount:before {
+      content: "You have " counter(invalidCount) " invalid entries";
   }

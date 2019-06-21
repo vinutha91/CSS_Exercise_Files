@@ -1,0 +1,18 @@
+/* Element Selector - Just tag name */
+/* SPECIFICITY 001 */
+li {
+    color: red;
+}
+
+/* Class Selector - Begins with dot "." */
+/* SPECIFICITY 010 */
+/* 010 > 004 */
+.myClass {
+    color: blue;
+}
+
+/* ID Selector - Begins with hash "#" */
+/* SPECIFICITY 100 */
+#myId {
+    color: green;
+}

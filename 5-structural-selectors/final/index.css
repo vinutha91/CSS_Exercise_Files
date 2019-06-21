@@ -1,0 +1,51 @@
+/* 
+// Targets HTML Element
+:root {
+    color: red;
+} 
+
+:empty {
+    border: 2px solid red;
+    width: 50px;
+}
+
+// Not supported currently
+// :-moz-whitespace-only
+:blank {
+    border: 2px solid red;
+    width: 50px;
+}
+
+*/
+
+.example1 li:first-child {
+    color: red;
+}
+
+.example1 li:last-child {
+    color: red;
+}
+
+.example2 li:first-of-type {
+    color: purple;
+}
+
+.example2 li:last-of-type {
+    color: purple;
+}
+
+.example3 li:only-child {
+    color: aqua;
+}
+
+.example4 li:only-of-type{
+    color:gold;
+}
+
+.example5 li:only-of-type, p:only-of-type {
+    color:gold;
+}
+
+.example6 li:only-child {
+    color: purple;
+}

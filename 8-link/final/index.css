@@ -1,0 +1,42 @@
+:link {
+    color: green;
+}
+
+:visited {
+    color: red;
+}
+
+/* same as :link, with :visited 
+:any-link {
+    color: green;
+}
+*/
+
+/* same as 
+:matches(:link, :visited){}
+*/
+
+/* :active and :hover can be on any elements */
+a:active {
+    color: gold;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:focus {
+    color: brown;
+}
+
+a:visited:hover {
+    color: yellowgreen;
+}
+
+div:target::first-line {
+    font-weight: bold;
+}
+
+div:target::first-letter {
+    color: red;
+}
