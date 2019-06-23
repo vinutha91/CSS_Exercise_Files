@@ -8,7 +8,43 @@
 </head>
 
 <body>
-    <button class="myButton">Click Me</button>
+    <button class="myButton">My Button</button>
+    <button class="myButton" disabled>Disabled Button</button>
+
+    <input type="checkbox" name="favFood">
+    <label>Pizza</label>
+    <input type="checkbox" name="favFood">
+    <label>Pasta</label>
+
+    <br/>
+    <input id="myCheckbox" type="checkbox" name="indeterminate">
+    <label>Indeterminate</label>
+
+    <br/>
+    <input type="text">
+    <input type="text" required>
+
+    <input type="number" min="5" max="10" step="1">
+
+    <input type="text" required>
+
+    <input type="email">
+
+
+    <div class="cssCounter">
+        <span>Stepper</span>
+        <br/>
+        <input type="number" min="5" max="10" step="1">
+        <input type="number" min="5" max="10" step="1">
+        <input type="number" min="5" max="10" step="1">
+        <input type="number" min="5" max="10" step="1">
+        <p class="myInvalidCount"></p>
+    </div>
+
+    <script>
+        var myCheckbox = document.getElementById('myCheckbox');
+        myCheckbox.indeterminate = true;
+    </script>
 </body>
 
 </html>

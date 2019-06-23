@@ -1,0 +1,57 @@
+/* Specificity? 001 */
+/* p {
+    color: blue;
+} */
+
+/* Specificity? 001 + 001 + 010 = 012 */
+/* div p.myClass {
+    color: gold;
+} */
+
+/* Specificity? 001 + 001 = 002 */
+/* Descendent Selector */
+div p {
+    color: red;
+}
+
+/* Parent Child Selector */
+div > p {
+    color: purple;
+}
+
+/* Immediate sibling, adjacent */
+div + p {
+    color: green;
+}
+
+/* All the direct siblings of div */
+div ~ p {
+    color: darkorange;
+}
+
+/* Select all the links which are
+    anchor tags having class myLink
+*/
+/* a.myLink:link {
+    color: green;
+} */
+
+/* Select all the links which have class mylink
+and are descendents of <a> tag
+*/
+/* a .myLink:link {
+    color: green;
+} */
+
+:link {
+    color: green;
+}
+
+:active {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+    cursor: progress;
+}

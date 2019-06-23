@@ -16,3 +16,10 @@ li {
 #myId {
     color: green;
 }
+
+div {
+    background-color: coral;
+    padding: 20px;
+    border: 5px solid green;
+    margin: 10px;
+}

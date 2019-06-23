@@ -1,0 +1,43 @@
+/* * {
+    color: gold;
+} */
+
+a[title] {
+    color: red;
+}
+
+a[title="my website link" i] {
+    color: green;
+}
+
+/* Begins with */
+a[href^="mailto"]::before {
+    content: '\2709';
+}
+
+/* Ends with */
+a[href$="pdf"]::before {
+    content: '\2710';
+}
+
+/* Contains */
+a[title*="ink"] {
+    color: orange;
+}
+
+/* Exact match, matches word */
+a[title~="link"] {
+    color: aqua;
+}
+
+
+/* Matches text containing en followed by -
+en-
+*/
+h2[language|="en"] {
+    color: gold;
+}
+
+input[type="text" i] {
+    border: 2px solid red;
+}

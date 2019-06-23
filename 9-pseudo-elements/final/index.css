@@ -1,0 +1,28 @@
+div.example1::first-line {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+div.example2::first-letter {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+div.example1::selection {
+    background-color:purple;
+    color: white;
+}
+
+p.example3::before {
+    content: 'This is CSS3 ';
+    font-weight: bold;
+}
+
+p.example3::after {
+    content: ' Course at Zensar!';
+    font-weight: bold;
+}
+
+p.example3 {
+    color: red;
+}
