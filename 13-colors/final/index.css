@@ -1,0 +1,16 @@
+.whiteColor {
+    color: white;
+    color: #fff;
+    color: #FFFFFF;
+    color: #FFFFFFFF;
+    color: rgb(255, 255, 255);
+    color: rgb(100%, 100%, 100%);
+    color: rgba(255, 255, 255, 1);
+    color: rgba(100%, 100%, 100%, 1);
+    color: hsl(0, 100%, 100%);
+    color: hsla(0, 100%, 100%, 1);
+    color: transparent;
+    color: currentColor;
+}
+
+/* Make it accessible!!! Contrast ration to be above 4.5 */

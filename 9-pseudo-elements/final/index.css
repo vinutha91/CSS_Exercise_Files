@@ -26,3 +26,32 @@ p.example3::after {
 p.example3 {
     color: red;
 }
+
+/* Disabling Selection */
+div.example4 {
+    -webkit-tap-highlight-color: red;
+    user-select: none;
+    touch-action: none;
+}
+
+
+/* Style native browser elements */
+::-webkit-scrollbar {
+    background-color: orange;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: royalblue
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: orange;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+::-webkit-scrollbar:hover {
+    background-color: royalblue;
+}

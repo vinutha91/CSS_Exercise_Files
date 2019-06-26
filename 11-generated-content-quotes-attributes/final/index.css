@@ -1,0 +1,33 @@
+:lang(en) {
+    quotes: '"' '"' "'" "'";
+}
+
+:lang(fr) {
+    quotes: '<<' '>>' "`" "`";
+}
+
+a[href^="http"]:hover {
+    position: relative;
+}
+
+a[href^="http"]:hover::after {
+    content: attr(href);
+    position: absolute;
+    top: 1em;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 3px;
+    line-height: 1;
+}
+
+.showMe:hover::after {
+    content: url(KF.svg);
+    position: absolute;
+    top: 1em;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 3px;
+    line-height: 1;
+}

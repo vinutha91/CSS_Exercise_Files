@@ -1,0 +1,17 @@
+body {
+    counter-reset: sections;
+}
+
+h1.sectionTitle::before {
+    content: "Section " counter(sections);
+    counter-increment: sections
+}
+
+div.attrExample::before {
+    content: attr(data-size);
+}
+
+/* Not supported yet! */
+div.attrExample::after {
+    font-size: attr(data-size px);
+}

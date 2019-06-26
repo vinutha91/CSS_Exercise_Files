@@ -1,0 +1,78 @@
+div.example1 {
+    height: 500px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1500px) {
+    div.example1::before {
+        content: "Laptop Content";
+    }
+
+    div.example1 {
+        background-color: red;
+        color: white;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1499px) {
+    div.example1::before {
+        content: "Tablet Content";
+    }
+
+    div.example1 {
+        background-color: yellow;
+        color: black;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    div.example1::before {
+        content: "Phone Content";
+    }
+
+    div.example1 {
+        background-color: skyblue;
+        color: black;
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Syntax and punctuation */
+/* Leaves out older browsers */
+@media only print and (color) {
+
+}
+
+/* and = both parts must be true */
+@media only screen and (orientation: portrait) {
+
+}
+
+/* not = untrue */
+@media not screen {
+
+}
+
+/* , = fallback */
+@media print, screen and (max-width: 480px) {
+
+}
+
+/* Browser Compatibility, @supports */
+
+@supports (display: flex) {
+
+}
+
+.example2 {
+    display: none;
+}
+
+@supports (box-align: unset) {
+    .example2 {
+        display: block;
+    }
+}
