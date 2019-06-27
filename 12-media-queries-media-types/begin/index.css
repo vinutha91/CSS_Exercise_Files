@@ -1,0 +1,48 @@
+div {
+    display: inline-block;
+}
+
+.myExample1 {
+    height: auto;
+    width: 49%;
+    border: 1px solid red;
+    background-color: burlywood;
+}
+
+.myExample2 {
+    height: auto;
+    width: 49%;
+    border: 1px solid red;
+    background-color: darkolivegreen;
+}
+
+@media screen and (width: 1024px) {
+    div {
+        display: block;
+    }
+
+    .myExample1, .myExample2 {
+        width: 100%;
+    }
+}
+
+/* Small */
+@media screen and (max-width: 420px) {}
+/* Medium */
+@media screen and (min-width: 421px) and (max-width: 768px) {}
+/* Large */
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+/* X-Large */
+@media screen and (min-width: 1025px) and (max-width: 2048px) {}
+
+
+@media print {
+    div {
+        background-color: red !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    a::after {
+        content: "[" attr(href) "]"
+    }
+}
