@@ -1,0 +1,39 @@
+header, footer {
+    background-color: aquamarine;
+    color: rgb(29, 26, 7);
+    font-size: 24px;
+}
+
+header > div {
+    padding: 10px;
+    margin: 5px;
+}
+
+.container {
+    display: grid;      
+    grid-template-columns: repeat(12, 1fr);  
+    grid-template-rows: 50px 350px 50px;  
+}
+
+header {
+    display: flex;
+    grid-column: span 12;
+}
+
+header > div:nth-child(3) {
+    margin-left: auto;
+}
+
+footer {
+    grid-column: span 12;
+}
+
+aside {  
+    grid-column: span 2; 
+    background-color: coral; 
+}
+
+content {  
+    grid-column: span 10;  
+    background-color: cornflowerblue; 
+}

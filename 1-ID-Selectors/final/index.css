@@ -30,3 +30,12 @@ li {
     color: red;
     font-size: 4em;
 }
+
+
+div#myElement > * {
+
+}
+
+body {
+    color: green;
+}

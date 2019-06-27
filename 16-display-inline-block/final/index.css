@@ -1,0 +1,48 @@
+div {
+    border: 1px solid red;
+}
+
+span {
+    border: 1px solid green;
+}
+
+img {
+    display: block;
+}
+
+/* span {
+    display: block;
+} */
+
+/* div {
+    display: inline;
+} */
+
+#firstImage {
+    display: none;
+}
+
+span {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+/* div {
+    height: 100px;
+    width: 100px;
+} */
+
+
+div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+div {
+    display: table-cell;
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+}
