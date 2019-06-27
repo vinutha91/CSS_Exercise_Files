@@ -46,3 +46,9 @@ div {
         content: "[" attr(href) "]"
     }
 }
+
+/* This is a sample change */
+
+@media only screen and (max-width: 980px) {
+    
+}
