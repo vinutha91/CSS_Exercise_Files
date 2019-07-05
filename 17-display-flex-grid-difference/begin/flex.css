@@ -1,0 +1,30 @@
+header {
+    background-color: rgb(52, 206, 155);
+    font-size: 24px;
+    color: black;
+}
+
+header > div {
+    padding: 10px;
+    margin: 5px;
+}
+
+header > div:nth-child(1) {
+    background-color: coral;
+}
+
+header > div:nth-child(2) {
+    background-color: orange;
+}
+
+header > div:nth-child(3) {
+    background-color: pink;
+}
+
+header {
+    display: flex;
+}
+
+header > div:nth-child(3) {
+    margin-left: auto;
+}

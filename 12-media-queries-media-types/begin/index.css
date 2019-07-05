@@ -48,5 +48,8 @@ div {
 }
 
 @media screen and (max-width: 969px) {
-    /* Some additional changes to this file */
+    div {
+        display: grid;
+        grid-column: auto;
+    }
 }

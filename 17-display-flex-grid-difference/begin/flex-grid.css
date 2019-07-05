@@ -1,0 +1,61 @@
+header, footer {
+    background-color: rgb(52, 206, 155);
+    font-size: 24px;
+    color: black;
+}
+
+header > div {
+    padding: 10px;
+    margin: 5px;
+}
+
+header > div:nth-child(1) {
+    background-color: coral;
+}
+
+header > div:nth-child(2) {
+    background-color: orange;
+}
+
+header > div:nth-child(3) {
+    background-color: pink;
+}
+
+aside {
+    background-color: rgb(253, 109, 13);
+    font-size: 24px;
+    color: black;
+}
+
+content {
+    background-color: rgb(255, 233, 37);
+    font-size: 24px;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 500px 50px;
+}
+
+header {
+    display: flex;
+    grid-column: span 12;
+}
+
+header > div:nth-child(3) {
+    margin-left: auto;
+}
+
+footer {
+    grid-column: span 12;
+}
+
+aside {
+    grid-column: span 2;
+}
+
+content {
+    grid-column: span 10;
+}
